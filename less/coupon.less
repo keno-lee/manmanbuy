@@ -1,0 +1,73 @@
+@import "import";
+
+@import "footer";
+
+// 头部区域
+.mmb_header {
+    height: 88rem/@base;
+    background-color: #f4483e;
+    
+    
+    position: relative;
+    .back {
+        font-size: 40rem/@base;
+        color: #fff;
+        position: absolute;
+        left: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    p {
+        height: 88rem/@base;
+        line-height: 88rem/@base;
+        text-align: center;
+        font-size: 30rem/@base;
+        color: #fff;
+        
+    }
+    
+
+    .app {
+        width: 68rem/@base;
+        height: 68rem/@base;
+        position: absolute;
+        right: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('../images/header_app.png') center center no-repeat;
+        background-size: 68rem/@base 68rem/@base;
+        
+    }
+}
+
+.mmb_list {
+    
+    ul {
+        margin-top: 30rem/@base;
+    }
+    li {
+        width: 100%/3;
+        height: 170rem/@base;
+        // background-color: pink;
+        float: left;
+    }
+
+    .wrapper {
+        width: 230rem/@base;
+        height: 150rem/@base;
+        border: 1rem/@base solid @bdColor;
+        margin: 10rem/@base auto 0;
+
+        .img_box {
+            width: 100rem/@base;
+            height: 100rem/@base;
+            margin: 10rem/@base auto 0;
+        }
+        p {
+            text-align: center;
+            font-size: 22rem/@base;
+            color: #000;
+        }
+    }
+}

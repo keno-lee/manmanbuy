@@ -1,0 +1,94 @@
+@import "import";
+
+@import "footer";
+
+.mmb_container {
+    background-color: #fff;
+}
+// 头部区域
+.mmb_header {
+    height: 88rem/@base;
+    
+    position: relative;
+    .back {
+        font-size: 40rem/@base;
+        color: #fff;
+        position: absolute;
+        left: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    p {
+        height: 88rem/@base;
+        background-color: @mmbColor;
+        line-height: 88rem/@base;
+        text-align: center;
+        font-size: 30rem/@base;
+        color: #fff;
+        
+    }
+    
+
+    .app {
+        width: 68rem/@base;
+        height: 68rem/@base;
+        position: absolute;
+        right: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('../images/header_app.png') center center no-repeat;
+        background-size: 68rem/@base 68rem/@base;
+        
+    }
+}
+.mmb_discount_content {
+
+    li {
+        width: 50%;
+        height: 530rem/@base;
+        float: left;
+        border-right: 1rem/@base solid @bdColor;
+        border-bottom: 1rem/@base solid @bdColor;
+    }
+    li:nth-child(even) {
+        border-right: none;
+    }
+
+    .img_box {
+        height: 375rem/@base;
+        // background-color: pink;
+        position: relative;
+
+        img {
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    .title {
+        padding: 0 20rem/@base;
+        font-size: 24rem/@base;
+        color: #000;
+    }
+    .price {
+        padding: 0 20rem/@base;
+        margin-top: 5rem/@base;        
+        font-size: 24rem/@base;
+        color: #ff6108;        
+    }
+    .from {
+        padding: 0 20rem/@base;
+        margin-top: 5rem/@base;
+        font-size: 18rem/@base;
+        color: @bdColor;
+    }
+}
+
+.footer {
+    background-color: #f1f1f1;
+}

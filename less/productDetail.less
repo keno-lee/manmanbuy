@@ -1,0 +1,198 @@
+@import "import";
+@import "header";
+@import "search";
+@import "footer";
+
+.mmb_content {
+    width: 100%;
+    // height: 1000px;
+    background-color: #fff;
+    font-size: 22rem/@base;
+    color: #000;
+    
+
+    .title {
+        height: 80rem/@base;
+        background-color: #f1f1f1;
+        padding-left: 20rem/@base;
+        border-top: 1rem/@base solid @bdColor;        
+        border-bottom: 1rem/@base solid @bdColor;
+         
+        position: relative;
+        
+    }
+    .crumb {
+        margin-right: 140rem/@base;
+
+        a {
+            height: 80rem/@base;
+            line-height: 80rem/@base;
+            color: #000;
+        }
+    }
+    .filter {
+        width: 125rem/@base;
+        height: 60rem/@base;
+        line-height: 60rem/@base;
+        border: 1rem/@base solid @bdColor;
+        border-radius: 5rem/@base;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15rem/@base;
+    }
+
+
+    .showcase {
+        width: 100%;
+        height: 505rem/@base;
+        position: relative;
+        
+        p {
+            font-size: 24rem/@base;
+            text-align: center;
+            margin: 10rem/@base 10rem/@base 0;
+            
+        }
+        .collect {
+            width: 80rem/@base;
+            height: 80rem/@base;
+            border-radius: 50%;
+            background-color: #95d800;
+            text-align: center;
+            line-height: 80rem/@base;
+            font-size: 24rem/@base;
+            color: #fff;
+            position: absolute;
+            right: 50rem/@base;
+            bottom: 50rem/@base;        
+        }
+        
+    }
+    .showcase_img {
+        width: 440rem/@base;
+        height: 440rem/@base;
+        margin: 0 auto;
+        position: relative;
+        
+        img {
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+    .details {
+        width: 100%;
+        height: 70rem/@base;
+        border-top: 1rem/@base solid #c1563a;
+        // border-bottom: 1rem/@base solid #c1563a;
+
+        .price_buy,
+        .parameter,
+        .comment {
+            width: 100%/3;
+            height: 70rem/@base;
+            border-right: 1rem/@base solid #c1563a;
+            border-bottom: 1rem/@base solid #c1563a;
+            
+            background-color: #ffca39;
+            text-align: center;
+            line-height: 70rem/@base;
+            color:#fff;
+            float: left;
+        }
+        .price_buy {
+            background-color: @mmbColor;
+        }
+        .comment {
+            border-right: none;  
+        }
+    }
+}
+.product_from {
+    // height: 210rem/@base;
+    // background-color: pink;
+    padding: 10rem/@base;
+    tr:first-child td:nth-child(1) {
+        width: 30rem/@base!important;
+
+    }
+    tr:first-child td:nth-child(1) a {
+        display: block;
+        margin-top: 11rem/@base!important;
+    }
+    tr:first-child td:nth-child(2) {
+       padding-left: 20rem/@base!important;
+    }
+    tr:first-child td:nth-child(3) {
+        width: 115rem/@base!important;
+        color: #d20307;
+    }
+
+    tr:first-child td:last-child span{
+        width: 115rem/@base!important;
+        height: 50rem/@base!important;
+        line-height: 50rem/@base!important;
+        font-size: 22rem/@base!important;
+    }
+
+}
+
+// 网友评论区域
+.mmb_commentList {
+    // height: 1000px;
+    // background-color: pink;
+    font-size: 22rem/@base;
+
+    .cm_title {
+        height: 80rem/@base;
+        border-top: 5rem/@base solid #747474;
+        line-height: 75rem/@base;
+        text-align: center;
+        background-color: #dbdbdb;
+        font-size: 26rem/@base;
+        color: #000;
+    }
+    .cm_content li{
+        border-bottom: 1rem/@base solid @bdColor;
+    }
+    .user_info {
+        height: 36rem/@base;
+        margin-top: 10rem/@base;
+        .user_name{
+            margin-left: 10rem/@base;
+        }
+        .com_time {
+            margin-right: 10rem/@base;
+        }
+    }
+    .goods_from {
+        margin-right: 10rem/@base; 
+        // height: 40rem/@base;  
+    }
+    .text_content {
+        margin-top: 35rem/@base;
+        padding: 10rem/@base;
+        color: #000;
+    }
+}
+
+.more_comment {
+    width: 720rem/@base;
+    height: 65rem/@base;
+    border: 1rem/@base solid @bdColor;
+    border-radius: 5rem/@base;
+    margin: 30rem/@base auto 50rem/@base;
+    background-color: #d9d9d9;
+    text-align: center;
+    line-height: 65rem/@base;
+    box-shadow: 0 2rem/@base 2rem/@base ;
+    font-size: 26rem/@base;
+    color: #000;
+}

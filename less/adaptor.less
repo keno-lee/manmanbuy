@@ -1,0 +1,26 @@
+//320 360 375 384 400 414 424 480 540 720 750
+// @media (min-width:320) {
+//     //基准值/设计值 = font-size / 屏幕大小
+//     html {
+//         font-size: @base/750*320px;
+//     }
+// }
+.adaptor(@value) {
+    @media (min-width:@value) {
+        //基准值/设计值 = font-size / 屏幕大小
+        html {
+            font-size: @base/@designWidth*@value;
+        }
+    }
+}
+.adaptor(320px);
+.adaptor(360px);
+.adaptor(375px);
+.adaptor(384px);
+.adaptor(400px);
+.adaptor(414px);
+.adaptor(424px);
+.adaptor(480px);
+.adaptor(540px);
+.adaptor(720px);
+.adaptor(750px);

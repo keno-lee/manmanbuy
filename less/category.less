@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@import "variable";
+@import "adaptor";
+@import "base";
+@import "container";
+@import "header";
+@import "search";
+@import "footer";
+
+// 分类页
+.mmb_category {
+    width: 100%;
+    background-color: pink;
+    border-radius: 10rem/@base;
+    border-bottom: 1rem/@base solid @bdColor;
+    border: 1rem/@base solid @bdColor;
+    border-radius: 10rem/@base;
+    background-color: #ededed;
+
+    // 大ul li title
+    .title {
+        height: 80rem/@base;
+        line-height: 80rem/@base;
+        padding-left: 35rem/@base;
+        font-size: 26rem/@base;
+        font-weight: 700;
+        // background-color: #ededed;
+        position: relative;
+        box-shadow: 0 1rem/@base 2rem/@base rgba(0,0,0,.6);
+
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20rem/@base;
+        }
+    }
+    
+
+    // 小ul
+    .content {
+        display: none;
+    }
+        
+    .cate_details {
+ 
+        li {
+            width: 100%/3;
+            height: 80rem/@base;
+            line-height: 80rem/@base;
+            background-color: #f9f9f9;
+            float: left;
+            text-align: center;
+            border-bottom: 1rem/@base solid @bdColor;
+            border-right: 1rem/@base solid @bdColor;
+            font-size: 22rem/@base;
+            
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        li:nth-child(-n+3){
+            border-top: 1rem/@base solid @bdColor;
+        }
+        li:nth-child(3n){
+            border-right: none;
+        }
+    }
+}
+// .sildeDown {
+//     animation: sildeDown duration timing-function delay iteration-count direction fill-mode;
+// }
+// @keyframes sildeDown {
+//     from {
+//         height: 0;
+//     }
+//     to {
+//         height: ;
+//     }
+// }

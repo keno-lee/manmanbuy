@@ -1,0 +1,117 @@
+@import "import";
+
+@import "footer";
+
+// 头部区域
+// 头部区域
+.mmb_header {
+    height: 88rem/@base;
+    
+    position: relative;
+    .back {
+        font-size: 40rem/@base;
+        color: #fff;
+        position: absolute;
+        left: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    p {
+        height: 88rem/@base;
+        background-color: @mmbColor;
+        line-height: 88rem/@base;
+        text-align: center;
+        font-size: 30rem/@base;
+        color: #fff;
+        
+    }
+    
+
+    .app {
+        width: 68rem/@base;
+        height: 68rem/@base;
+        position: absolute;
+        right: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('../images/header_app.png') center center no-repeat;
+        background-size: 68rem/@base 68rem/@base;
+        
+    }
+}
+.mmb_economy_list {
+    background-color: #fff;
+    li {
+        width: 100%;
+        height: 250rem/@base;
+        border-bottom: 1px solid #757779;
+    }
+    .content_img {
+        width: 230rem/@base;
+        padding: 30rem/@base;
+        float: left;
+    }
+    .content_des {
+        height: 255rem/@base;          
+        overflow: hidden;
+        padding: 30rem/@base 20rem/@base 0 0;
+        position: relative;
+        p {
+            font-size: 22rem/@base;
+            color: #0D0441;
+            span {
+                color: #FF6B1B;
+            }
+        }
+        .from {
+            width: 100%;
+            margin-top: 60rem/@base;
+            p {
+                font-size: 20rem/@base;
+                color: #757779;
+                float: left;
+                
+            }
+        }
+        .comment {
+            float: right;
+            font-size: 20rem/@base;
+            
+        }       
+    }
+}
+.page_control {
+    margin-top: 15rem/@base;
+    width: 100%;
+    height: 80rem/@base;
+
+    .prev,
+    .next,
+    .pages {
+        width: 100%/3;
+        height: 80rem/@base;
+        
+        float: left;
+        margin-top: 10rem/@base;
+    }
+
+    .prev_btn,
+    .next_btn,
+    .pages select {
+        display: block;
+        width: 165rem/@base;
+        height: 65rem/@base;
+        line-height: 65rem/@base;
+        border: 1rem/@base solid @bdColor;
+        border-radius: 4rem/@base;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 22rem/@base;
+        color: #000;
+        
+    }
+    .pages select {
+        padding-left: 40rem/@base;
+    }
+}

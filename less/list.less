@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@import "import";
+
+@import "header";
+@import "search";
+@import "footer";
+
+.mmb_content {
+    width: 100%;
+    // height: 1000px;
+    background-color: #fff;
+    font-size: 22rem/@base;
+    color: #000;
+    
+
+    .title {
+        height: 80rem/@base;
+        background-color: #f1f1f1;
+        padding-left: 20rem/@base;
+        border-top: 1rem/@base solid @bdColor;        
+        border-bottom: 1rem/@base solid @bdColor;
+         
+        position: relative;
+        
+    }
+    .crumb {
+        margin-right: 140rem/@base;
+
+        a {
+            height: 80rem/@base;
+            line-height: 80rem/@base;
+            color: #000;
+        }
+    }
+    .filter {
+        width: 125rem/@base;
+        height: 60rem/@base;
+        line-height: 60rem/@base;
+        border: 1rem/@base solid @bdColor;
+        border-radius: 5rem/@base;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15rem/@base;
+    }
+
+    //商品列表
+
+    .product_list {
+        width: 100%;
+        li {
+            width: 100%;
+            height: 240rem/@base;
+            border-bottom: 1rem/@base solid #757779;
+        }
+        .product_img {
+            width: 239rem/@base;
+            height: 239rem/@base;
+            // padding: 10rem/@base;
+            background-color: #fff;
+            float: left;
+            position: relative;
+
+            img {
+                width: 80%;
+                height: 80%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .product_des {
+            height: 255rem/@base;          
+            overflow: hidden;
+            padding: 30rem/@base 20rem/@base 0 0;
+            position: relative;
+            p {
+                font-size: 22rem/@base;
+                color: #0D0441;
+            }
+            .product_price {
+                margin-top: 25rem/@base;
+                font-size: 20rem/@base;
+                color: #e73600;
+                font-size: 24rem/@base;
+                
+            }
+            .procuct_info {
+
+                margin-top: 20rem/@base;
+                a {
+                    font-size: 20rem/@base;
+                    color: @bdColor;
+                    float: left;
+                    margin-right: 15rem/@base;
+                }
+
+            }
+            
+        }
+    }
+
+}
+// 分页控制
+.page_control {
+    margin-top: 15rem/@base;
+    width: 100%;
+    height: 80rem/@base;
+
+    .prev,
+    .next,
+    .pages {
+        width: 100%/3;
+        height: 80rem/@base;
+        
+        float: left;
+        margin-top: 10rem/@base;
+    }
+
+    .prev_btn,
+    .next_btn,
+    .pages select {
+        display: block;
+        width: 165rem/@base;
+        height: 65rem/@base;
+        line-height: 65rem/@base;
+        border: 1rem/@base solid @bdColor;
+        border-radius: 4rem/@base;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 22rem/@base;
+        color: #000;
+        
+    }
+    .pages select {
+        padding-left: 40rem/@base;
+    }
+}

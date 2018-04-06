@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页</title>
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <link rel="stylesheet" href="./fonts/font-awesome.css">
+</head>
+
+<body>
+
+    <!-- 全局容器 -->
+    <div class="mmb_container">
+        <!-- 头部区域 -->
+        <div class="mmb_header">
+            <a class="back" href="#"><i class="fa fa-chevron-left"></i></a>
+            <p>凑单品</p>
+            <a href="">
+                <div class="app"></div>
+            </a>
+        </div>
+
+        <!-- 导航 -->
+        <div class="mmb_nav">
+            <div class="info">
+                <div class="shops">
+                    <select name="" id="">
+                        <option value="">京东</option>
+                    </select>
+                </div>
+                <div class="area">
+                    <select name="" id="">
+                        <option value="">华北</option>
+                    </select>
+                </div>
+                <div class="price">
+                    <select name="" id="">
+                        <option value="">全部价格</option>
+                    </select>
+                </div>
+            </div>
+            <div class="search">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <!-- 列表 -->
+        <div class="mmb_list">
+            <ul class="clearfix">
+                <li>
+                    <div class="content_box">
+                        <div class="img_box"></div>
+                        <p class="one-txt-cut">金东超市</p>
+                        <div class="price_box">
+                            <span class="fl">199</span>
+                            <span class="fr go_buy">去凑单</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="login_btn">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="#"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+            <div class="copyright">
+                <p><a href="javasciprt:;">手机app下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./lib/jquery/jquery-1.12.4.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+    <script src="./js/gsproduct.js"></script>
+
+</body>
+
+<script type="text/template" id="shops_tmp">
+    {{each result v}}
+    <option value="{{v.shopId}}">{{v.shopName}}</option>
+    {{/each}}
+</script>
+
+<script type="text/template" id="area_tmp">
+    {{each result v}}
+    <option value="{{v.areaId}}">{{v.areaName}}</option>
+    {{/each}}
+</script>
+
+<script type="text/template" id="pro_tmp">
+    {{each result v}}
+    <li>
+        <div class="content_box">
+            <div class="img_box"><img src="{{v.productImg}}" alt=""></div>
+            <p class="one-txt-cut">{{v.productName}}</p>
+            <div class="price_box">
+                <span class="fl">{{v.productPrice}}</span>
+                <span class="fr go_buy">去凑单</span>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+
+</script>
+
+</html>

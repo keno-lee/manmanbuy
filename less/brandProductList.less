@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@import "variable";
+@import "adaptor";
+@import "base";
+@import "container";
+@import "header";
+@import "search";
+@import "footer";
+
+
+// .mmb_content {
+
+// }
+.crumb {
+    height: 75rem/@base;
+    border-top: 1rem/@base solid @bdColor;
+    border-bottom: 1rem/@base solid @bdColor;
+    line-height: 75rem/@base;
+    font-size: 24rem/@base;
+    
+    padding-left: 10rem/@base;
+
+    a {
+        color:#000;
+    }
+}
+.title{
+    // margin: 10rem/@base auto; 
+    height: 85rem/@base; 
+    line-height: 85rem/@base; 
+    border-top: 1rem/@base solid @bdColor;
+    border-bottom: 1rem/@base solid @bdColor;
+    font-size: 26rem/@base;
+    color: #8a3e36;
+    padding-left: 10rem/@base;
+    
+    
+}
+.product_list {
+    width: 100%;
+    li {
+        width: 100%;
+        height: 240rem/@base;
+        border-bottom: 1rem/@base solid #757779;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    .product_img {
+        width: 238rem/@base;
+        height: 238rem/@base;
+        // padding: 10rem/@base;
+        background-color: #fff;
+        float: left;
+        position: relative;
+
+        img {
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .product_des {
+        height: 255rem/@base;          
+        overflow: hidden;
+        padding: 30rem/@base 20rem/@base 0 0;
+        position: relative;
+        p {
+            font-size: 22rem/@base;
+            color: #0D0441;
+        }
+        .product_price {
+            margin-top: 25rem/@base;
+            font-size: 20rem/@base;
+            color: #e73600;
+            font-size: 24rem/@base;
+            
+        }
+        .procuct_info {
+
+            margin-top: 20rem/@base;
+            a {
+                font-size: 20rem/@base;
+                color: @bdColor;
+                float: left;
+                margin-right: 15rem/@base;
+            }
+
+        }
+        
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页</title>
+    <link rel="stylesheet" href="./css/discountGlobal.css">
+    <link rel="stylesheet" href="./fonts/font-awesome.css">
+</head>
+
+<body>
+
+    <!-- 全局容器 -->
+    <div class="mmb_container">
+        <!-- 头部区域 -->
+        <div class="mmb_header">
+            <a class="back" href="#"><i class="fa fa-chevron-left"></i></a>
+            <p>海淘折扣</p>
+            <a href="">
+                <div class="app"></div>
+            </a>
+        </div>
+
+        <!-- 列表区域 -->
+        <div class="mmb_economy_list">
+            <ul>
+                <li>
+                    <div class="content_img"><img src="./images/ic_mall.png" alt=""></div>
+                    <div class="content_des">
+                        <a href="#">
+                            <p>移动端凑单品移动端凑单品移动端凑单品移动端凑单品移动端凑单品移动端凑单品<span>10.9元</span></p>
+                        </a>
+                        <div class="from">
+                            <p>京东商城|10-25 14:10</p>
+                            <div class="comment"><i class="fa fa-comment-o"></i><span> 1</span></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 分页控制 -->
+        <div class="page_control">
+            <div class="prev">
+                <div class="prev_btn">上一页</div>
+            </div>
+            <div class="pages">
+                <select name="" id="page_select"></select>
+            </div>
+            <div class="next">
+                <div class="next_btn">下一页</div>
+            </div>
+        </div>
+
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="login_btn">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="#"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+            <div class="copyright">
+                <p><a href="javasciprt:;">手机app下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./lib/jquery/jquery-1.12.4.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+
+    <script src="./js/cheap.js"></script>
+
+    <!-- 商品推荐的模板 -->
+    <script type="text/template" id="eco_tmp">
+        {{each list v}}
+        <li data-productId="{{v.productId}}">
+            <div class="content_img">{{@v.productImgSm}}</div>
+            <div class="content_des">
+                <a href="cheapProduct.html?productid={{v.productId}}">
+                    <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
+                </a>
+                <div class="from">
+                    <p>{{v.productFrom}}|{{v.productTime}}</p>
+                    <div class="comment"><i class="fa fa-comment-o"></i><span>{{v.productComCount}}</span></div>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

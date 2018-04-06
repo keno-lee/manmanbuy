@@ -1,0 +1,79 @@
+@import "import";
+
+@import "footer";
+
+// 头部区域
+.mmb_header {
+    height: 88rem/@base;
+    
+    position: relative;
+    .back {
+        font-size: 40rem/@base;
+        color: #fff;
+        position: absolute;
+        left: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    p {
+        height: 88rem/@base;
+        background-color: @mmbColor;
+        line-height: 88rem/@base;
+        text-align: center;
+        font-size: 30rem/@base;
+        color: #fff;
+        
+    }
+    
+
+    .app {
+        width: 68rem/@base;
+        height: 68rem/@base;
+        position: absolute;
+        right: 15rem/@base;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('../images/header_app.png') center center no-repeat;
+        background-size: 68rem/@base 68rem/@base;
+        
+    }
+}
+
+.mmb_list {
+    // 90
+    li {
+        width: 50%;
+        float: left;
+        height: 90rem/@base;
+        margin-top: 15rem/@base;
+        
+    }
+    .content {
+        height: 90rem/@base;
+        padding: 0 20rem/@base;
+    }
+
+    .img_box {
+        width: 90rem/@base;
+        height: 90rem/@base;
+        float: left;
+        position: relative;
+        img {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .text_box {
+        height: 90rem/@base;  
+        line-height: 90rem/@base;        
+              
+        overflow: hidden;
+        font-size: 26rem/@base;
+        
+    }
+}

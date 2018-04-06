@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+@import "variable";
+@import "adaptor";
+@import "base";
+@import "container";
+@import "header";
+@import "search";
+@import "footer";
+
+
+
+.crumb {
+    height: 75rem/@base;
+    border-top: 1rem/@base solid @bdColor;
+    border-bottom: 1rem/@base solid @bdColor;
+    line-height: 75rem/@base;
+    font-size: 24rem/@base;
+    
+    padding-left: 10rem/@base;
+
+    a {
+        color:#000;
+    }
+}
+.title{
+    // margin: 10rem/@base auto; 
+    height: 85rem/@base; 
+    line-height: 85rem/@base; 
+    border-top: 1rem/@base solid @bdColor;
+    border-bottom: 1rem/@base solid @bdColor;
+    font-size: 26rem/@base;
+    color: #8a3e36;
+    padding-left: 10rem/@base;
+    
+    
+}
+.list {
+
+    ul {
+        border-top: 1rem/@base solid @bdColor;
+        border-bottom: 1rem/@base solid @bdColor;
+        border-radius: 5rem/@base;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    li {
+        height: 130rem/@base;
+        line-height: 130rem/@base;
+        // background-color: lime;
+        padding-left: 35rem/@base;
+        font-size: 26rem/@base;
+        border-bottom:1rem/@base solid @bdColor;
+    
+        .num {
+            width: 40rem/@base;
+            height: 40rem/@base;
+            text-align: center;
+            line-height: 40rem/@base;
+            background-color: #939593;
+            float: left;
+            margin-top: 45rem/@base;
+        }
+
+        .text {
+            float: left;
+            height: 100rem/@base;
+            margin-top: 15rem/@base;
+
+            p{
+                height: 50rem/@base;
+                line-height: 65rem/@base;
+                margin-left: 10rem/@base;
+            } 
+            p:last-child {
+                color: #939593;
+                font-size: 20rem/@base;
+            }
+        }
+
+        i {
+            height: 130rem/@base;
+            line-height: 130rem/@base;
+            float: right;
+            font-size: 30rem/@base;
+            margin-right: 35rem/@base;
+            
+        }
+    }
+    li:last-child {
+        border-bottom:none;
+    }
+    li:nth-child(1) .num{
+        background-color: red;
+    }
+    li:nth-child(2) .num{
+        background-color: #ff9313;
+    }
+    li:nth-child(3) .num{
+        background-color: #8adf5b;
+    }
+}

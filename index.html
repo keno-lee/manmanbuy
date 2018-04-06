@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./fonts/font-awesome.css">
+</head>
+
+<body>
+    <!-- 慢慢买项目容器 -->
+    <div class="mmb_container">
+        <!-- 头部区域 -->
+        <div class="mmb_header clearfix">
+            <div class="logo"></div>
+            <a href="">
+                <div class="app"></div>
+            </a>
+        </div>
+        <!-- 搜索框区域 -->
+        <div class="mmb_search clearfix">
+            <div class="input_wrap"><input type="text" placeholder="请输入想要比价的商品"></div>
+            <input type="button" value="搜索">
+        </div>
+        <!-- 导航栏区域 -->
+        <div class="mmb_nav">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_search.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 商品推荐区域 -->
+        <div class="mmb_recommend">
+            <div class="rec_header">
+                <p>超值折扣推荐</p>
+                <img class="more" src="./images/more.png" alt="">
+            </div>
+            <div class="rec_content">
+                <ul>
+                    <li>
+                        <div class="content_img"><img src="./images/ic_mall.png" alt=""></div>
+                        <div class="content_des">
+                            <a href="#">
+                                <p>移动端凑单品移动端凑单品移动端凑单品移动端凑单品移动端凑单品移动端凑单品<span>10.9元</span></p>
+                            </a>
+                            <div class="from">
+                                <p>京东商城|10-25 14:10</p>
+                                <div class="comment"><i class="fa fa-comment-o"></i><span> 1</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 更多优惠信息 -->
+            <div class="more_info">
+                <p>更多优惠信息 >></p>
+            </div>
+            <!-- 品牌排行 -->
+            <div class="band_rank">
+                <p>品牌排行</p>
+                <img class="more" src="./images/more.png" alt="">
+            </div>
+        </div>
+
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="login_btn">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="#"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+            <div class="copyright">
+                <p><a href="javasciprt:;">手机app下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+    <img src="" alt="">
+    <script src="./lib/jquery/jquery-1.12.4.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- 导航的模板 -->
+    <script type="text/template" id="nav_tmp">
+        {{each list v}}
+        <li data-id="{{v.indexmenuId}}">
+            {{if v.indexmenuId==7 }}
+            <a href="javascript:;">
+                {{else}}
+                <a href="{{v.titlehref}}">
+            {{/if}}
+            {{@v.img}}
+            </a>
+            <p>{{v.name}}</p>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 商品推荐的模板 -->
+    <script type="text/template" id="rec_tmp">
+        {{each list v}}
+        <li data-productId="{{v.productId}}">
+            <div class="content_img">{{@v.productImgSm}}</div>
+            <div class="content_des">
+                <a href="#">
+                    <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
+                </a>
+                <div class="from">
+                    <p>{{v.productFrom}}|{{v.productTime}}</p>
+                    <div class="comment"><i class="fa fa-comment-o"></i><span>{{v.productComCount}}</span></div>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+
+</body>
+
+</html>

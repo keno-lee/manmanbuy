@@ -1,0 +1,368 @@
+@charset "utf-8";
+@media (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+/*去除边框*/
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: none;
+  /*去除的蓝色小边框*/
+  outline-style: none;
+}
+/*禁止表单域缩放*/
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  /* 取消链接高亮  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  /*解决图片底部对其问题*/
+  display: block;
+  border: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+/*i标签的表现跟span是一样*/
+em,
+i {
+  font-style: normal;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/*多行溢出 8 */
+.txt-cut-8 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+.mmb_container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+.mmb_header {
+  width: 100%;
+  height: 2rem;
+  background-color: #ff841d;
+  overflow: hidden;
+}
+.mmb_header .logo {
+  width: 7.42rem;
+  height: 1rem;
+  margin-left: 0.68rem;
+  margin-top: 0.44rem;
+  background: url('../images/header_logo.png') center center no-repeat;
+  background-size: 7.42rem 1rem;
+  float: left;
+}
+.mmb_header .app {
+  width: 1.36rem;
+  height: 1.36rem;
+  margin-right: 0.24rem;
+  margin-top: 0.24rem;
+  background: url('../images/header_app.png') center center no-repeat;
+  background-size: 1.36rem 1.36rem;
+  float: right;
+}
+.mmb_search {
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+  position: relative;
+}
+.mmb_search .input_wrap {
+  margin-right: 3.6rem;
+}
+.mmb_search input[type="text"] {
+  width: 100%;
+  height: 1.2rem;
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  border-radius: 0.6rem;
+  background-color: #f1f1f1;
+  color: #757779;
+  padding-left: 0.84rem;
+  font-size: 0.48rem;
+}
+.mmb_search input[type="button"] {
+  width: 2.56rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  margin-top: 0.4rem;
+  margin-right: 0.4rem;
+  font-size: 0.48rem;
+  background-color: #ff841d;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.footer {
+  margin-top: 1rem;
+  height: 3.8rem;
+  width: 100%;
+}
+.footer .login_btn {
+  width: 100%;
+  height: 1.4rem;
+  border-top: 1px solid #757779;
+  border-bottom: 1px solid #757779;
+}
+.footer .login_btn a {
+  display: block;
+  float: left;
+  border-right: 1px solid #757779;
+  width: 33.33%;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.44rem;
+  color: #0D0441;
+  text-align: center;
+}
+.footer .login_btn a:last-child {
+  border-right: none;
+}
+.footer .copyright {
+  margin-top: 0.7rem;
+}
+.footer .copyright p {
+  text-align: center;
+  color: #0D0441;
+  font-size: 0.36rem;
+}
+.footer .copyright p a {
+  color: #FE0605;
+}
+.footer .copyright p span {
+  color: #757779;
+}
+.footer .copyright p:last-child {
+  color: #757779;
+}
+.crumb {
+  height: 1.5rem;
+  border-top: 0.02rem solid #757779;
+  border-bottom: 0.02rem solid #757779;
+  line-height: 1.5rem;
+  font-size: 0.48rem;
+  padding-left: 0.2rem;
+}
+.crumb a {
+  color: #000;
+}
+.title {
+  height: 1.7rem;
+  line-height: 1.7rem;
+  border-top: 0.02rem solid #757779;
+  border-bottom: 0.02rem solid #757779;
+  font-size: 0.52rem;
+  color: #8a3e36;
+  padding-left: 0.2rem;
+}
+.list ul {
+  border-top: 0.02rem solid #757779;
+  border-bottom: 0.02rem solid #757779;
+  border-radius: 0.1rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.list li {
+  height: 2.6rem;
+  line-height: 2.6rem;
+  padding-left: 0.7rem;
+  font-size: 0.52rem;
+  border-bottom: 0.02rem solid #757779;
+}
+.list li .num {
+  width: 0.8rem;
+  height: 0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
+  background-color: #939593;
+  float: left;
+  margin-top: 0.9rem;
+}
+.list li .text {
+  float: left;
+  height: 2rem;
+  margin-top: 0.3rem;
+}
+.list li .text p {
+  height: 1rem;
+  line-height: 1.3rem;
+  margin-left: 0.2rem;
+}
+.list li .text p:last-child {
+  color: #939593;
+  font-size: 0.4rem;
+}
+.list li i {
+  height: 2.6rem;
+  line-height: 2.6rem;
+  float: right;
+  font-size: 0.6rem;
+  margin-right: 0.7rem;
+}
+.list li:last-child {
+  border-bottom: none;
+}
+.list li:nth-child(1) .num {
+  background-color: red;
+}
+.list li:nth-child(2) .num {
+  background-color: #ff9313;
+}
+.list li:nth-child(3) .num {
+  background-color: #8adf5b;
+}

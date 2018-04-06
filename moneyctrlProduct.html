@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页</title>
+    <link rel="stylesheet" href="./css/cheapProduct.css">
+    <link rel="stylesheet" href="./fonts/font-awesome.css">
+</head>
+
+<body>
+
+    <!-- 全局容器 -->
+    <div class="mmb_container">
+        <!-- 头部区域 -->
+        <div class="mmb_header">
+            <a class="back" href="#"><i class="fa fa-chevron-left"></i></a>
+            <p>省钱控 - 商品详情</p>
+            <a href="">
+                <div class="app"></div>
+            </a>
+        </div>
+        <!-- 商品详情区 -->
+        <div class="mmb_discount_content">
+            <h3>移动端</h3>
+            <p class="sectitle"><span>京东商城</span><span>10-25</span><span>小编验货</span></p>
+            <div class="content_des">
+                <div class="txt_des">
+                    <p>122222222222222222222222222222222222222222222222222222222222</p>
+                </div>
+                <div class="img_des"><img src="" alt=""></div>
+            </div>
+            <p class="now_news">目前移动端目前移动端目前移动端目前移动端目前移动端目前移动端</p>
+            <div class="img_box">
+                <img src="" alt="">
+            </div>
+            <div class="storage">
+                <ul>
+                    <li>江苏有货</li>
+                    <li>江苏有货</li>
+                    <li>江苏有货</li>
+                    <li>江苏有货</li>
+                </ul>
+            </div>
+            <div class="go_buy">前往购买</div>
+        </div>
+        <!-- 二维码信息区 -->
+        <div class="mmb_ercode">
+            <img src="./images/mmbweixin2.png" alt="">
+        </div>
+        <!-- 发表评论去 -->
+        <div class="mmb_com">
+
+        </div>
+
+
+
+
+
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="login_btn">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="#"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+            <div class="copyright">
+                <p><a href="javasciprt:;">手机app下载</a>慢慢买手机版<span>--掌上比价平台</span></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./lib/jquery/jquery-1.12.4.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+    <script src="./js/cheapProduct.js"></script>
+
+
+    <script type="text/template" id="disc_tmp">
+
+        {{each result v}}
+        <h3>{{v.productName}}</h3>
+        <p class="sectitle"><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
+        <div class="content_des">
+            <div class="txt_des">
+                <p>{{v.productInfo}}</p>
+            </div>
+            <div class="img_des">{{@v.productImgSm}}</div>
+        </div>
+        <p class="now_news">{{v.productInfo1}}</p>
+        <div class="img_box">
+            {{@v.productImgLg}}
+        </div>
+        <div class="storage">
+            {{@v.productCity}}
+        </div>
+        <div class="go_buy">前往购买</div>
+        {{/each}}
+    </script>
+
+    <script type="text/template" id="com_tmp">
+        {{each result v}} {{@v.productComment}} {{/each}}
+    </script>
+</body>
+
+</html>
